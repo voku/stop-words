@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/voku/phonetic-algorithms.svg?branch=master)](https://travis-ci.org/voku/phonetic-algorithms)
+[![Build Status](https://travis-ci.org/voku/stop-words.svg?branch=master)](https://travis-ci.org/voku/phonetic-algorithms)
 [![Coverage Status](https://coveralls.io/repos/github/voku/phonetic-algorithms/badge.svg?branch=master)](https://coveralls.io/github/voku/phonetic-algorithms?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/voku/phonetic-algorithms/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/voku/phonetic-algorithms/?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6b5ba69c2fa640d6b3ce13e784e4cf64)](https://www.codacy.com/app/voku/phonetic-algorithms?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=voku/phonetic-algorithms&amp;utm_campaign=Badge_Grade)

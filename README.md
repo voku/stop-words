@@ -12,7 +12,7 @@
 
 ## Description
 
-lorem ipsum 
+A collection of stop words for e.g. search-functions.
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -30,7 +30,8 @@ composer require voku/stop-words
 ## Usage
 
 ```php
-TODO
+$stopWords = new StopWords();
+$stopWords->getStopWordsFromLanguage('de');
 ```
 
 ## History

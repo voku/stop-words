@@ -12,7 +12,7 @@
 
 ## Description
 
-A collection of stop words for e.g. search-functions.
+A collection of stop words stop words in various languages for e.g. search-functions.
 
 * [Installation](#installation)
 * [Usage](#usage)
@@ -33,6 +33,33 @@ composer require voku/stop-words
 $stopWords = new StopWords();
 $stopWords->getStopWordsFromLanguage('de');
 ```
+
+Available languages
+-------------------
+* Arabic (ar)
+* Bulgarian (bg)
+* Catalan (ca)
+* Czech (cz)
+* Danish (da)
+* Dutch (nl)
+* English (en)
+* Finnish (fi)
+* French (fr)
+* German (de)
+* Hindi (hi)
+* Hungarian (hu)
+* Indonesian (id)
+* Italian (it)
+* Norwegian (no)
+* Polish (pl)
+* Portuguese (pt)
+* Romanian (ro)
+* Russian (ru)
+* Slovak (sk)
+* Spanish (es)
+* Swedish (sv)
+* Turkish (tr)
+* Ukrainian (ua)
 
 ## History
 See [CHANGELOG](CHANGELOG.md) for the full history of changes.

@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// indonesian
 
 static $data = array(
     'ada',

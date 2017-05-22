@@ -1,5 +1,7 @@
 <?php
 
+// french
+
 static $data = array(
     'a',
     'A',

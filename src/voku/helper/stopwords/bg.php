@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// bulgarian
 
 static $data = array(
     'а',

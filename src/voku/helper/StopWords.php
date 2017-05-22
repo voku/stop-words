@@ -13,20 +13,38 @@ final class StopWords
    * @var array
    */
   private static $availableLanguages = array(
+      'ar',
+      'bg',
+      'ca',
+      'cz',
       'da',
       'de',
+      'el',
       'en',
+      'eo',
       'es',
+      'et',
       'fi',
       'fr',
+      'hi',
+      'hr',
       'hu',
+      'id',
       'it',
+      'ka',
+      'lt',
+      'lv',
       'nl',
       'no',
+      'pl',
       'pt',
+      'ro',
       'ru',
+      'sk',
       'sv',
       'tr',
+      'uk',
+      'vi'
   );
 
   /**

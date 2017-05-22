@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// polish
 
 static $data = array(
     'ach',

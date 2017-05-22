@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// czech
 
 static $data = array(
     'og',

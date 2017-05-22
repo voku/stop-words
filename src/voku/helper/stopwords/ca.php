@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// catalan
 
 static $data = array(
     'ačkoli',

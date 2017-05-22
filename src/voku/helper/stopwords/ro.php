@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// romanian
 
 static $data = array(
     'vreo',

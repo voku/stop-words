@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// arabic
 
 static $data = array(
     'فى',

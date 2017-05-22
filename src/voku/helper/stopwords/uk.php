@@ -1,6 +1,6 @@
 <?php
 
-// danish
+// ukrainian
 
 static $data = array(
     'a',

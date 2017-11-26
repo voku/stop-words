@@ -2,7 +2,7 @@
 
 // french
 
-static $data = array(
+static $data = [
     'a',
     'A',
     'à',
@@ -710,7 +710,7 @@ static $data = array(
     '-y',
     'Z',
     'zéro',
-);
+];
 
 $result =& $data;
 unset($data);

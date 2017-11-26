@@ -2,7 +2,7 @@
 
 // catalan
 
-static $data = array(
+static $data = [
     'ačkoli',
     'ahoj',
     'ale',
@@ -259,7 +259,7 @@ static $data = array(
     'zatímco',
     'ze',
     'že',
-);
+];
 
 $result =& $data;
 unset($data);

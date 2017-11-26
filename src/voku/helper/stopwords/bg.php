@@ -2,7 +2,7 @@
 
 // bulgarian
 
-static $data = array(
+static $data = [
     'а',
     'автентичен',
     'аз',
@@ -262,7 +262,7 @@ static $data = array(
     'юмрук',
     'я',
     'як',
-);
+];
 
 $result =& $data;
 unset($data);

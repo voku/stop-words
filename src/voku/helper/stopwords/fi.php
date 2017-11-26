@@ -2,7 +2,7 @@
 
 // finnish
 
-static $data = array(
+static $data = [
     'olla',
     'olen',
     'olet',
@@ -238,7 +238,7 @@ static $data = array(
     'niin',
     'nyt',
     'itse',
-);
+];
 
 $result =& $data;
 unset($data);

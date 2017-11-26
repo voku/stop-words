@@ -2,7 +2,7 @@
 
 // greek
 
-static $data = array(
+static $data = [
     'αλλα',
     'αν',
     'αντι',
@@ -268,7 +268,7 @@ static $data = array(
     'ὥστε',
     'ὦ',
     'ᾧ',
-);
+];
 
 $result =& $data;
 unset($data);

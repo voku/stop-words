@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace voku\helper;
 
 /**
@@ -59,9 +61,9 @@ final class StopWords
    *
    * @throws StopWordsLanguageNotExists
    */
-  private function loadLanguageData($language = 'de')
+  private function loadLanguageData(string $language = 'de')
   {
-    if (in_array($language, self::$availableLanguages, true) === false) {
+    if (\in_array($language, self::$availableLanguages, true) === false) {
       throw new StopWordsLanguageNotExists('language not supported: ' . $language);
     }
 
@@ -75,7 +77,7 @@ final class StopWords
    *
    * @return array <p>Will return an empty array on error.</p>
    */
-  private function getData($file)
+  private function getData(string $file): array
   {
     static $RESULT_STOP_WORDS_CACHE = array();
 
@@ -103,9 +105,9 @@ final class StopWords
    *
    * @throws StopWordsLanguageNotExists
    */
-  public function getStopWordsFromLanguage($language = 'de')
+  public function getStopWordsFromLanguage(string $language = 'de'): array
   {
-    if (in_array($language, self::$availableLanguages, true) === false) {
+    if (\in_array($language, self::$availableLanguages, true) === false) {
       throw new StopWordsLanguageNotExists('language not supported: ' . $language);
     }
 
@@ -132,7 +134,7 @@ final class StopWords
    *
    * @throws StopWordsLanguageNotExists
    */
-  public function getStopWordsAll()
+  public function getStopWordsAll(): array
   {
     $this->loadLanguageDataAll();
 

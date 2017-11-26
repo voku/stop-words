@@ -2,7 +2,7 @@
 
 // turkish
 
-static $data = array(
+static $data = [
     'acaba',
     'ama',
     'aslında',
@@ -56,7 +56,7 @@ static $data = array(
     'veya',
     'ya',
     'yani',
-);
+];
 
 $result =& $data;
 unset($data);

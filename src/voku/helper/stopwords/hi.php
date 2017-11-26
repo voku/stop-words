@@ -2,7 +2,7 @@
 
 // hindi
 
-static $data = array(
+static $data = [
     'अंदर',
     'अत',
     'अदि',
@@ -228,7 +228,7 @@ static $data = array(
     'होते',
     'होना',
     'होने',
-);
+];
 
 $result =& $data;
 unset($data);

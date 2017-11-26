@@ -2,7 +2,7 @@
 
 // indonesian
 
-static $data = array(
+static $data = [
     'ada',
     'adanya',
     'adalah',
@@ -360,7 +360,7 @@ static $data = array(
     'yaitu',
     'yakni',
     'yang',
-);
+];
 
 $result =& $data;
 unset($data);

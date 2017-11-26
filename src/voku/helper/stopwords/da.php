@@ -2,7 +2,7 @@
 
 // danish
 
-static $data = array(
+static $data = [
     'ad',
     'af',
     'aldrig',
@@ -173,7 +173,7 @@ static $data = array(
     'vores',
     'være',
     'været',
-);
+];
 
 $result =& $data;
 unset($data);

@@ -2,7 +2,7 @@
 
 // italian
 
-static $data = array(
+static $data = [
     'ad',
     'al',
     'allo',
@@ -282,7 +282,7 @@ static $data = array(
     'stessimo',
     'stessero',
     'stando',
-);
+];
 
 $result =& $data;
 unset($data);

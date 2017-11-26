@@ -2,7 +2,7 @@
 
 // croatian
 
-static $data = array(
+static $data = [
     'a',
     'ako',
     'ali',
@@ -182,7 +182,7 @@ static $data = array(
     'ćeš',
     'ću',
     'što',
-);
+];
 
 $result =& $data;
 unset($data);

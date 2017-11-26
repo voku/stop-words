@@ -2,7 +2,7 @@
 
 // slovak
 
-static $data = array(
+static $data = [
     'a',
     'aby',
     'aj',
@@ -176,7 +176,7 @@ static $data = array(
     'za',
     'zo',
     'že',
-);
+];
 
 $result =& $data;
 unset($data);

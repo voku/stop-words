@@ -2,7 +2,7 @@
 
 // hungarian
 
-static $data = array(
+static $data = [
     'a',
     'ahogy',
     'ahol',
@@ -202,7 +202,7 @@ static $data = array(
     'vele',
     'viszont',
     'volna',
-);
+];
 
 $result =& $data;
 unset($data);

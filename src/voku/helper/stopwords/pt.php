@@ -2,7 +2,7 @@
 
 // portuguese
 
-static $data = array(
+static $data = [
     'de',
     'a',
     'o',
@@ -206,7 +206,7 @@ static $data = array(
     'teria',
     'teríamos',
     'teriam',
-);
+];
 
 $result =& $data;
 unset($data);

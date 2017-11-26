@@ -2,7 +2,7 @@
 
 // swedish
 
-static $data = array(
+static $data = [
     'och',
     'det',
     'att',
@@ -117,7 +117,7 @@ static $data = array(
     'ert',
     'era',
     'vilkas',
-);
+];
 
 $result =& $data;
 unset($data);

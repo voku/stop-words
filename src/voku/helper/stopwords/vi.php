@@ -2,7 +2,7 @@
 
 // vietnamese
 
-static $data = array(
+static $data = [
     'a ha',
     'a-lô',
     'ai',
@@ -648,7 +648,7 @@ static $data = array(
     'ứ ừ',
     'ừ',
     'ử',
-);
+];
 
 $result =& $data;
 unset($data);

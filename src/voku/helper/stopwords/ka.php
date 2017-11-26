@@ -2,7 +2,7 @@
 
 // georgian
 
-static $data = array(
+static $data = [
     'ა.შ.',
     'აგერ',
     'აგრეთვე',
@@ -376,7 +376,7 @@ static $data = array(
     'როგორც უკვე ითქვა',
     'როდის და რატომ',
     'უფრო და უფრო',
-);
+];
 
 $result =& $data;
 unset($data);

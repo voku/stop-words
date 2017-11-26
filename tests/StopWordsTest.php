@@ -5,17 +5,17 @@ use voku\helper\StopWords;
 /**
  * Class PhoneticAlgorithmsTest
  */
-class StopWordsTest extends \PHPUnit_Framework_TestCase
+class StopWordsTest extends \PHPUnit\Framework\TestCase
 {
   public function testForGermanStopWords()
   {
     $stopWords = new StopWords();
-    $testStrings = array(
+    $testStrings = [
         'für',
         'haben',
         'hier',
         'ich',
-    );
+    ];
 
     foreach ($testStrings as $testString) {
       self::assertTrue(
@@ -28,14 +28,14 @@ class StopWordsTest extends \PHPUnit_Framework_TestCase
   public function testForAllStopWords()
   {
     $stopWords = new StopWords();
-    $testStrings = array(
+    $testStrings = [
         'a',
         'ahogy',
         'ahol',
         'aki',
         'akik',
         'akkor',
-    );
+    ];
 
     $result = $stopWords->getStopWordsAll();
 

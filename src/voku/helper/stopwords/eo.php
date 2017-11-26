@@ -2,7 +2,7 @@
 
 // esperanto
 
-static $data = array(
+static $data = [
     'adiaŭ',
     'ajn',
     'al',
@@ -176,7 +176,7 @@ static $data = array(
     'ŝi',
     'ŝia',
     'ŝin',
-);
+];
 
 $result =& $data;
 unset($data);

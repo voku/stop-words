@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [2.0.0] - 2017-11-26
+### Changed
+- "php": ">=7.0"
+
 ## [1.2.0] - 2017-05-22
 ### Changed
 - add more languages
@@ -15,4 +19,3 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [1.0.0] - 2017-05-05
 ### Changed
 - init 
-

@@ -2,7 +2,7 @@
 
 // russian
 
-static $data = array(
+static $data = [
     'и',
     'в',
     'во',
@@ -154,7 +154,7 @@ static $data = array(
     'конечно',
     'всю',
     'между',
-);
+];
 
 $result =& $data;
 unset($data);

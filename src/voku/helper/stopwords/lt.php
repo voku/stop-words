@@ -2,7 +2,7 @@
 
 // lithuanian
 
-static $data = array(
+static $data = [
     'abi',
     'abidvi',
     'abiejose',
@@ -477,7 +477,7 @@ static $data = array(
     'ðtai',
     'ðájá',
     'þemiau',
-);
+];
 
 $result =& $data;
 unset($data);

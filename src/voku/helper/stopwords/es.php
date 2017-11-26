@@ -2,7 +2,7 @@
 
 // spanish
 
-static $data = array(
+static $data = [
     'de',
     'la',
     'que',
@@ -316,7 +316,7 @@ static $data = array(
     'tenidos',
     'tenidas',
     'tened',
-);
+];
 
 $result =& $data;
 unset($data);

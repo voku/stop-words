@@ -2,7 +2,7 @@
 
 // romanian
 
-static $data = array(
+static $data = [
     'vreo',
     'acelea',
     'cita',
@@ -261,7 +261,7 @@ static $data = array(
     'ni',
     'aceia',
     'am',
-);
+];
 
 $result =& $data;
 unset($data);

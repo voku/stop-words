@@ -2,7 +2,7 @@
 
 // german
 
-static $data = array(
+static $data = [
     'ab',
     'bei',
     'da',
@@ -1026,7 +1026,7 @@ static $data = array(
     'übermorgen',
     'übrig',
     'übrigens',
-);
+];
 
 $result =& $data;
 unset($data);

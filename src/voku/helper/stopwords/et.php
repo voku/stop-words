@@ -2,7 +2,7 @@
 
 // estonian
 
-static $data = array(
+static $data = [
     'aga',
     'ei',
     'et',
@@ -38,7 +38,7 @@ static $data = array(
     'ta',
     'te',
     'ära',
-);
+];
 
 $result =& $data;
 unset($data);

@@ -2,7 +2,7 @@
 
 // english
 
-static $data = array(
+static $data = [
     'a',
     'about',
     'above',
@@ -322,7 +322,7 @@ static $data = array(
     'yourself',
     'yourselves',
     'the',
-);
+];
 
 $result =& $data;
 unset($data);

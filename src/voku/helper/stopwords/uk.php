@@ -2,7 +2,7 @@
 
 // ukrainian
 
-static $data = array(
+static $data = [
     'a',
     'б',
     'в',
@@ -388,7 +388,7 @@ static $data = array(
     'дев\'ятнадцять',
     'чотирнадцятий',
     'дев\'ятнадцятий',
-);
+];
 
 $result =& $data;
 unset($data);

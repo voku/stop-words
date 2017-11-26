@@ -2,7 +2,7 @@
 
 // latvian
 
-static $data = array(
+static $data = [
     'aiz',
     'ap',
     'apakš',
@@ -164,7 +164,7 @@ static $data = array(
     'zem',
     'ārpus',
     'šaipus',
-);
+];
 
 $result =& $data;
 unset($data);

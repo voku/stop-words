@@ -2,7 +2,7 @@
 
 // norwegian
 
-static $data = array(
+static $data = [
     'og',
     'i',
     'jeg',
@@ -179,7 +179,7 @@ static $data = array(
     'vort',
     'varte',
     'vart',
-);
+];
 
 $result =& $data;
 unset($data);

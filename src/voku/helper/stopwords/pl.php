@@ -2,7 +2,7 @@
 
 // polish
 
-static $data = array(
+static $data = [
     'ach',
     'aj',
     'albo',
@@ -141,7 +141,7 @@ static $data = array(
     'żaden',
     'zawsze',
     'że',
-);
+];
 
 $result =& $data;
 unset($data);

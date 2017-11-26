@@ -2,7 +2,7 @@
 
 // czech
 
-static $data = array(
+static $data = [
     'og',
     'i',
     'jeg',
@@ -97,7 +97,7 @@ static $data = array(
     'thi',
     'jer',
     'sådan',
-);
+];
 
 $result =& $data;
 unset($data);

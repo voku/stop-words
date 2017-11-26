@@ -9,9 +9,6 @@
          stopOnFailure="false"
          syntaxCheck="false"
          bootstrap="tests/bootstrap.php"
-         verbose="true"
-         tap="true"
-         testdox="true"
 >
     <testsuite name="stop-words">
         <directory>tests</directory>

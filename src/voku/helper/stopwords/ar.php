@@ -2,7 +2,7 @@
 
 // arabic
 
-static $data = array(
+static $data = [
     'فى',
     'في',
     'كل',
@@ -165,7 +165,7 @@ static $data = array(
     'اي',
     'بها',
     'صفر',
-);
+];
 
 $result =& $data;
 unset($data);

@@ -30,6 +30,8 @@ composer require voku/stop-words
 ## Usage
 
 ```php
+use voku\helper\StopWords;
+
 $stopWords = new StopWords();
 $stopWords->getStopWordsFromLanguage('de');
 ```

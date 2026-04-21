@@ -1,0 +1,1 @@
+{"version":1,"defects":{"StopWordsTest::testForNonExistingLanguage":4},"times":{"StopWordsTest::testForGermanStopWords":0.002,"StopWordsTest::testForAllStopWords":0.002,"StopWordsTest::testForNonExistingLanguage":0.001}}

@@ -7,20 +7,18 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false"
          bootstrap="tests/bootstrap.php"
 >
-    <testsuite name="stop-words">
-        <directory>tests</directory>
-    </testsuite>
-    <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
+    <testsuites>
+        <testsuite name="stop-words">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage processUncoveredFiles="true">
+        <include>
             <directory suffix=".php">./src/</directory>
-        </whitelist>
-        <blacklist>
-            <directory suffix=".php">./vendor</directory>
-        </blacklist>
-    </filter>
+        </include>
+    </coverage>
     <logging>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
     </logging>

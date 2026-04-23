@@ -26,14 +26,18 @@ final class StopWords
       'eo',
       'es',
       'et',
+      'fa',
       'fi',
       'fr',
+      'he',
       'hi',
       'hr',
       'hu',
       'id',
       'it',
+      'ja',
       'ka',
+      'ko',
       'lt',
       'lv',
       'nl',
@@ -46,7 +50,8 @@ final class StopWords
       'sv',
       'tr',
       'uk',
-      'vi'
+      'vi',
+      'zh'
   );
 
   /**

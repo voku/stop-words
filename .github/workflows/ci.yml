@@ -71,9 +71,10 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-progress
 
       # composer audit requires Composer >= 2.4; PHP 7.1 uses Composer 2.2 LTS
+      # --abandoned=ignore: dev-deps like phpunit/php-token-stream are abandoned but not a security risk
       - name: Security audit
         if: matrix.php != '7.1'
-        run: composer audit
+        run: composer audit --abandoned=ignore
 
       - name: Run tests
         run: |

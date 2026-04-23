@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: "PHP ${{ matrix.php }} – PHPUnit"
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # PHP 7.1 – PHPUnit 7.x (Composer 2.2 LTS, no `composer audit`)
+          - php: "7.1"
+            coverage: "none"
+          # PHP 7.2 – PHPUnit 8.x
+          - php: "7.2"
+            coverage: "none"
+          # PHP 7.3 – PHPUnit 9.x
+          - php: "7.3"
+            coverage: "none"
+          # PHP 7.4 – PHPUnit 9.x
+          - php: "7.4"
+            coverage: "none"
+          # PHP 8.x – PHPUnit 9.x (8.0-8.1) / PHPUnit 11.x (8.2+) + xdebug coverage
+          - php: "8.0"
+            coverage: "xdebug"
+          - php: "8.1"
+            coverage: "xdebug"
+          - php: "8.2"
+            coverage: "xdebug"
+          - php: "8.3"
+            coverage: "xdebug"
+          - php: "8.4"
+            coverage: "xdebug"
+          - php: "8.5"
+            coverage: "xdebug"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up PHP ${{ matrix.php }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring
+          coverage: ${{ matrix.coverage }}
+          tools: composer:v2
+
+      - name: Validate composer.json
+        run: composer validate --strict
+
+      - name: Cache Composer packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache
+          key: ${{ runner.os }}-php${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+          restore-keys: |
+            ${{ runner.os }}-php${{ matrix.php }}-composer-
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      # composer audit requires Composer >= 2.4; PHP 7.1 uses Composer 2.2 LTS
+      # --abandoned=ignore: dev-deps like phpunit/php-token-stream are abandoned but not a security risk
+      - name: Security audit
+        if: matrix.php != '7.1'
+        run: composer audit --abandoned=ignore
+
+      - name: Run tests
+        run: |
+          mkdir -p build/logs
+          if [ "${{ matrix.coverage }}" = "xdebug" ]; then
+            XDEBUG_MODE=coverage vendor/bin/phpunit -c phpunit.xml \
+              --coverage-clover build/logs/clover.xml
+          else
+            vendor/bin/phpunit -c phpunit.xml
+          fi

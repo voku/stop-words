@@ -47,11 +47,10 @@ class StopWordsTest extends \PHPUnit\Framework\TestCase
     }
   }
 
-  /**
-   * @expectedException \voku\helper\StopWordsLanguageNotExists
-   */
   public function testForNonExistingLanguage()
   {
+    $this->expectException(\voku\helper\StopWordsLanguageNotExists::class);
+
     $stopWords = new StopWords();
     $stopWords->getStopWordsFromLanguage('foo');
   }
